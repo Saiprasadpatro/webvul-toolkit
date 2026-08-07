@@ -16,7 +16,6 @@ import sys
 import yaml
 import subprocess
 from datetime import datetime
-from shutil import which
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
 
@@ -189,7 +188,10 @@ def main():
         )
         sys.exit(3)
 
-    print("Authorization file found and ALLOW_EXECUTION=1 — executing commands now.")
+    print(
+        "Authorization file found and ALLOW_EXECUTION=1 — executing "
+        "commands now."
+    )
 
     for s, c in cmds:
         print(f"Running [{s}]: {c}")
