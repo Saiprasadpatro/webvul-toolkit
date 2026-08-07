@@ -1,0 +1,11 @@
+Authorization for security testing
+
+Target: <target hostname or IP>
+Scope: <list allowed paths, subdomains, etc.>
+Authorized by: <owner name or organization>
+Contact: <email or phone>
+Valid from: <YYYY-MM-DD>  To: <YYYY-MM-DD>
+Signature: <owner signature or signed file>
+
+Notes:
+- Keep this file locally and provide its path to the CLI via --auth-file when executing scans.
