@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  zap:
+    image: owasp/zap2docker-stable
+    entrypoint: ["sleep","infinity"]
+    # Start the container manually and run zap-baseline.py via docker run in the CLI template.
