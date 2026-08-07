@@ -1,0 +1,17 @@
+# Example scanner configuration
+scanners:
+  - name: nmap
+    command_template: "nmap -sV -A {target} -oN {outfile}"
+    requires: ["nmap"]
+  - name: nikto
+    command_template: "nikto -h {target} -output {outfile}"
+    requires: ["nikto"]
+  - name: dirb
+    command_template: "dirb http://{target} -o {outfile}"
+    requires: ["dirb"]
+  - name: sqlmap
+    command_template: "sqlmap -u {target} --batch --output-dir={outdir}"
+    requires: ["sqlmap"]
+  - name: zap
+    command_template: "docker run --rm owasp/zap2docker-stable zap-baseline.py -t {target} -r {outfile}.html"
+    requires: ["docker"]
