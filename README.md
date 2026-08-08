@@ -37,3 +37,5 @@ Recommended scanners included
 Support & Contribution
 - Follow the contributing guidelines in CONTRIBUTING.md.
 - Open PRs for new scanner modules, but ensure each addition keeps the safety-first defaults.
+-Thanks
+
